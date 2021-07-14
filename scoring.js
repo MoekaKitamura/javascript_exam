@@ -28,7 +28,6 @@ $(document).ready(function () {
       // 変数「averageIndicate」に
       // 平均点数をHTML上のid="average_indicate"から取得して代入します。
       let averageIndicate = $("#average_indicate").text();
-      debbuger;
       // console.log(averageIndicate)
       // もし「averageIndicate」が80以上なら"A"を返します。
       // もし「averageIndicate」が60以上なら"B"を返します。
