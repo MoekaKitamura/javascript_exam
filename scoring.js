@@ -20,8 +20,8 @@ $(document).ready(function () {
       // 「平均点：」に各教科の平均点を出力する処理を記述する。
       // ヒント：変数「average」に平均値を出して代入しましょう(平均をとりたい数の合計点数(sum) / 全体の個数)
       // ヒント：全体の個数はlengthメソッドを使って求めます。(lengthメソッド: 文字列の長さや配列の要素数などを取得するメソッド)
-      let avarage = sum/subject_points.length;
-      $("#average_indicate").text(avarage);
+      let average = sum/subject_points.length;
+      $("#average_indicate").text(average);
     };
     // 平均点数を取得し、取得した平均点数から「A、B、C、D」にランク分けするロジックを記述する。
     function get_achievement() {
@@ -60,7 +60,7 @@ $(document).ready(function () {
           if(subject_points[i]<60){
               judge="不合格";
               break;
-            }  　// ヒント：配列の繰り返し処理について調べてみましょう。
+            }  // ヒント：配列の繰り返し処理について調べてみましょう。
         };
         return judge;
     };
